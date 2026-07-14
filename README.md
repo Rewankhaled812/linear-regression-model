@@ -151,10 +151,11 @@ linear-regression-model/
 
 # Results
 
-The Linear Regression model demonstrated a reasonable ability to capture the relationship between the input features and the target variable.
+Three Linear Regression models were trained to predict **Math**, **Reading**, and **Writing** scores.
 
-Performance evaluation metrics and visualizations indicated that the model learned the general trend of the data, while leaving room for improvement through more advanced feature engineering and regression algorithms.
+The **Math Score** model achieved the best performance, while the **Reading** and **Writing** models showed limited predictive capability.
 
+These results indicate that **Linear Regression serves as a baseline model** for this dataset. Although it captures some relationships between the features and target variables, its performance suggests that more advanced regression models and additional feature engineering may be required for improved predictive accuracy.
 ---
 
 # Future Improvements
