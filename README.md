@@ -172,6 +172,57 @@ Possible enhancements include:
 - Gradient Boosting Models
 
 ---
+# Model Performance Summary
+
+Three separate Linear Regression models were trained to predict students' performance in **Math**, **Reading**, and **Writing** scores.
+
+## Evaluation Results
+
+| Target Variable | MAE | RMSE | R² Score |
+|-----------------|------:|------:|------:|
+| Math Score | 10.44 | 12.82 | 0.267 |
+| Reading Score | 11.99 | 14.72 | -0.050 |
+| Writing Score | 12.17 | 14.91 | 0.028 |
+
+## Performance Analysis
+
+### Math Score Model
+
+- **MAE:** 10.44
+- **RMSE:** 12.82
+- **R² Score:** 0.267
+
+The Math model achieved the best performance among the three models. The positive R² score indicates that the model was able to explain approximately **26.7%** of the variance in the target variable, making it the most effective regression model in this project.
+
+---
+
+### Reading Score Model
+
+- **MAE:** 11.99
+- **RMSE:** 14.72
+- **R² Score:** -0.050
+
+The Reading model showed weak predictive performance. The negative R² score suggests that the Linear Regression model performed worse than simply predicting the average reading score, indicating that the relationship between the available features and the target variable was not well captured.
+
+---
+
+### Writing Score Model
+
+- **MAE:** 12.17
+- **RMSE:** 14.91
+- **R² Score:** 0.028
+
+The Writing model produced only a slight improvement over the baseline prediction. The very low R² score indicates that Linear Regression was unable to explain much of the variability in writing scores.
+
+---
+
+## Overall Findings
+
+- The **Math Score** model achieved the strongest predictive performance.
+- The **Reading** and **Writing** models demonstrated limited predictive capability using a basic Linear Regression approach.
+- The evaluation suggests that Linear Regression may not be sufficient for all target variables in this dataset.
+- Additional feature engineering, feature selection, or more advanced regression algorithms may improve predictive performance.
+---
 
 # Learning Outcomes
 
